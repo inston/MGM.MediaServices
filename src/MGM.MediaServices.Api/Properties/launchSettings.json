@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "MGM.MediaServices.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51769;http://localhost:51770"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "version": 4,
+  "targets": {
+    "net8.0": {
+      "MGM.MediaServices.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MGM.MediaServices.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MGM.MediaServices.Core.dll": {}
+        }
+      },
+      "MGM.MediaServices.Worker/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MGM.MediaServices.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MGM.MediaServices.Worker.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MGM.MediaServices.Worker.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MGM.MediaServices.Core/1.0.0": {
+      "type": "project",
+      "path": "../MGM.MediaServices.Core/MGM.MediaServices.Core.csproj",
+      "msbuildProject": "../MGM.MediaServices.Core/MGM.MediaServices.Core.csproj"
+    },
+    "MGM.MediaServices.Worker/1.0.0": {
+      "type": "project",
+      "path": "../MGM.MediaServices.Worker/MGM.MediaServices.Worker.csproj",
+      "msbuildProject": "../MGM.MediaServices.Worker/MGM.MediaServices.Worker.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "MGM.MediaServices.Core >= 1.0.0",
+      "MGM.MediaServices.Worker >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\daniel_admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Dev\\inston\\MGM.MediaServices\\src\\MGM.MediaServices.Api\\MGM.MediaServices.Api.csproj",
+      "projectName": "MGM.MediaServices.Api",
+      "projectPath": "D:\\Dev\\inston\\MGM.MediaServices\\src\\MGM.MediaServices.Api\\MGM.MediaServices.Api.csproj",
+      "packagesPath": "C:\\Users\\daniel_admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Dev\\inston\\MGM.MediaServices\\src\\MGM.MediaServices.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\daniel_admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\Dev\\inston\\MGM.MediaServices\\src\\MGM.MediaServices.Core\\MGM.MediaServices.Core.csproj": {
+              "projectPath": "D:\\Dev\\inston\\MGM.MediaServices\\src\\MGM.MediaServices.Core\\MGM.MediaServices.Core.csproj"
+            },
+            "D:\\Dev\\inston\\MGM.MediaServices\\src\\MGM.MediaServices.Worker\\MGM.MediaServices.Worker.csproj": {
+              "projectPath": "D:\\Dev\\inston\\MGM.MediaServices\\src\\MGM.MediaServices.Worker\\MGM.MediaServices.Worker.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "framework": "net8.0",
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
