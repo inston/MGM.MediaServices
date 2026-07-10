@@ -1,0 +1,65 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+.vscode/
+*.opendb
+*.db
+
+# Rider
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Temp
+temp/
+tmp/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Media temp files (optional)
+*.tmp
+*.temp
+/src/MGM.MediaServices.Api/obj/Debug/net8.0/MGM.MediaServices.Api.AssemblyInfo.cs
+/src/MGM.MediaServices.Api/obj/Debug/net8.0/MGM.MediaServices.Api.AssemblyInfoInputs.cache
+/src/MGM.MediaServices.Core/obj/Debug/net8.0/MGM.MediaServices.Core.AssemblyInfo.cs
+/src/MGM.MediaServices.Core/obj/Debug/net8.0/MGM.MediaServices.Core.AssemblyInfoInputs.cache
+/src/MGM.MediaServices.Tests/obj/Debug/net8.0/MGM.MediaServices.Tests.AssemblyInfo.cs
+/src/MGM.MediaServices.Tests/obj/Debug/net8.0/MGM.MediaServices.Tests.AssemblyInfoInputs.cache
+/src/MGM.MediaServices.Worker/obj/Debug/net8.0/MGM.MediaServices.Worker.AssemblyInfo.cs
+/src/MGM.MediaServices.Worker/obj/Debug/net8.0/MGM.MediaServices.Worker.AssemblyInfoInputs.cache
