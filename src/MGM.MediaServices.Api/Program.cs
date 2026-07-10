@@ -1,9 +1,14 @@
+using MGM.MediaServices.Core.Configuration;
 using MGM.MediaServices.Core.Models;
 using MGM.MediaServices.Core.Services;
 using MGM.MediaServices.Worker;
 using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configuration
+builder.Services.Configure<MediaServicesOptions>(
+    builder.Configuration.GetSection("MediaServices"));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -31,8 +36,6 @@ app.MapPost("/api/jobs", async (Job job, JobQueue queue, ILogger<Program> logger
 
     job.Status = JobStatus.Queued;
     await queue.EnqueueAsync(job);
-
-    // Callback can be called from worker when job completes (future enhancement)
 
     return Results.Accepted($"/api/jobs/{job.Id}", job);
 });

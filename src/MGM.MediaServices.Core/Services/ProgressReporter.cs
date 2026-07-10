@@ -1,3 +1,4 @@
+using MGM.MediaServices.Core.Models;
 namespace MGM.MediaServices.Core.Services;
 
 public class ProgressReporter : IProgressReporter
