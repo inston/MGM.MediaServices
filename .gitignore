@@ -4,6 +4,7 @@
 bin/
 obj/
 **/.vs/**
+**/*.AssemblyReference.cache
 **/*.assets.cache
 **/*.csproj.nuget.*
 **/project.assets.json
