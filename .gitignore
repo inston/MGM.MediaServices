@@ -1,52 +1,44 @@
-# .NET
-bin/
-obj/
+# .NET + MSBuild caches (this should finally work)
+**/bin/**
+**/obj/**
+**/.vs/**
+**/*.assets.cache
+**/*.csproj.nuget.*
+**/*.g.props
+**/*.g.targets
+**/*.g.spec.json
+**/project.assets.json
+**/project.nuget.cache
+**/project.nuget.cache.lock
+
+# Standard .NET
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
-
-# Visual Studio
-.vs/
-.vscode/
-*.opendb
-*.db
-
-# Rider
-.idea/
-
-# Build results
 [Dd]ebug/
 [Rr]elease/
-x64/
-x86/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
 
-# NuGet caches
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# Packages
 packages/
 *.nupkg
-*.snupkg
-**/*.assets.cache
-**/*.csproj.nuget.*
-**/project.assets.json
-**/project.nuget.cache
-**/*.g.props
-**/*.g.targets
-**/*.g.spec.json
 
-# Docker
-.dockerignore
-
-# OS
+# OS / Temp
 .DS_Store
 Thumbs.db
-
-# Temp / Media
 *.tmp
 *.temp
 
-# Local DB (uncomment if you don't want to version the jobs.db)
+# Local DB (optional)
 # data/jobs.db
+
+# Force ignore all obj contents
+src/**/obj/**
+src/**/bin/**
+**/obj/**
+**/bin/**
