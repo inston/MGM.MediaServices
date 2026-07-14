@@ -15,7 +15,7 @@ obj/
 # Rider
 .idea/
 
-# Build results (reinforced)
+# Build results
 [Dd]ebug/
 [Rr]elease/
 x64/
@@ -25,10 +25,17 @@ bld/
 [Oo]bj/
 [Ll]og/
 
-# NuGet
+# NuGet caches
 packages/
 *.nupkg
 *.snupkg
+**/*.assets.cache
+**/*.csproj.nuget.*
+**/project.assets.json
+**/project.nuget.cache
+**/*.g.props
+**/*.g.targets
+**/*.g.spec.json
 
 # Docker
 .dockerignore
@@ -37,9 +44,9 @@ packages/
 .DS_Store
 Thumbs.db
 
-# Media / Temp
+# Temp / Media
 *.tmp
 *.temp
 
-# Local DB (optional - keep if you want to version it, otherwise ignore)
+# Local DB (uncomment if you don't want to version the jobs.db)
 # data/jobs.db
