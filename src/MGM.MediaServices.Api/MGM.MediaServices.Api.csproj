@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MGM.MediaServices.Core\MGM.MediaServices.Core.csproj" />
     <ProjectReference Include="..\MGM.MediaServices.Worker\MGM.MediaServices.Worker.csproj" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
 </Project>
