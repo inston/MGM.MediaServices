@@ -1,21 +1,18 @@
-# .NET + MSBuild caches (this should finally work)
+# Aggressive .NET ignore
 **/bin/**
 **/obj/**
+bin/
+obj/
 **/.vs/**
 **/*.assets.cache
 **/*.csproj.nuget.*
-**/*.g.props
-**/*.g.targets
-**/*.g.spec.json
 **/project.assets.json
 **/project.nuget.cache
-**/project.nuget.cache.lock
 
-# Standard .NET
+# Standard
 *.user
 *.suo
 *.userosscache
-*.sln.docstates
 [Dd]ebug/
 [Rr]elease/
 
@@ -24,21 +21,7 @@
 .vscode/
 .idea/
 
-# Packages
-packages/
-*.nupkg
-
-# OS / Temp
+# Other
 .DS_Store
 Thumbs.db
 *.tmp
-*.temp
-
-# Local DB (optional)
-# data/jobs.db
-
-# Force ignore all obj contents
-src/**/obj/**
-src/**/bin/**
-**/obj/**
-**/bin/**
